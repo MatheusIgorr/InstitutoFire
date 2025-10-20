@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso APH - Atendimento Pré-Hospitalar | Brigaditas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="logo-brigada.png" alt="Brigada de Emergência" class="logo">
+                    <span class="brand-name">Brigaditas</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <!-- SVG icons -->
+                    </button>
+                    <a href="login.html" class="btn btn-ghost">Entrar</a>
+                    <a href="signup.html" class="btn btn-primary">Cadastro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <a href="courses.html" class="back-link">← Voltar aos Cursos</a>
+            <h1>Curso de APH - Atendimento Pré-Hospitalar</h1>
+            <p>Protocolos avançados para atendimento de emergências fora do ambiente hospitalar</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 15%"></div>
+            </div>
+            <span class="progress-text" id="progressText">15% completo</span>
+        </div>
+    </header>
+
+    <main class="container course-main">
+        <div class="course-grid">
+            <div class="course-content">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <span>▶</span>
+                        <p id="lessonTitle">Avaliação Primária no APH</p>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="lessons">Aulas</button>
+                        <button class="tab-btn" data-tab="exercises">Exercícios</button>
+                        <button class="tab-btn" data-tab="info">Sobre o Curso</button>
+                        <button class="tab-btn" data-tab="related">Outros Cursos</button>
+                    </div>
+
+                    <div class="tab-content active" id="lessons-tab">
+                        <div class="lessons-list" id="lessonsList">
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">1</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Conceitos Básicos do APH</div>
+                                    <div class="lesson-duration">35 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">2</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">ABCDE do Trauma</div>
+                                    <div class="lesson-duration">40 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">3</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Imobilizações e Talas</div>
+                                    <div class="lesson-duration">45 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">4</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Transporte de Vítimas</div>
+                                    <div class="lesson-duration">50 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="info-tab">
+                        <div class="course-info-card">
+                            <h3>Sobre o Curso de APH</h3>
+                            <p>Curso completo de Atendimento Pré-Hospitalar com protocolos internacionais e técnicas avançadas para atendimento em ambiente extra-hospitalar.</p>
+                            
+                            <h4>Conteúdo Programático:</h4>
+                            <ul>
+                                <li>Avaliação primária e secundária</li>
+                                <li>Protocolo ABCDE do trauma</li>
+                                <li>Controle de hemorragias</li>
+                                <li>Imobilizações e técnicas de talas</li>
+                                <li>Transporte seguro de vítimas</li>
+                                <li>Atendimento a múltiplas vítimas</li>
+                            </ul>
+
+                            <h4>Competências Desenvolvidas:</h4>
+                            <ul>
+                                <li>Capacidade de liderança em emergências</li>
+                                <li>Tomada de decisão rápida e eficaz</li>
+                                <li>Habilidades técnicas em procedimentos de emergência</li>
+                                <li>Comunicação eficiente com equipes de resgate</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="related-tab">
+                        <div class="related-courses">
+                            <h3>Cursos Relacionados</h3>
+                            <p class="section-subtitle">Complete sua formação em emergências</p>
+                            
+                            <div class="related-courses-grid">
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-trauma-avancado.jpg" alt="Trauma Avançado">
+                                        <div class="course-badge">Avançado</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Trauma Avançado - PHTLS</h4>
+                                        <p>Protocolos internacionais para atendimento a trauma</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 50 horas</span>
+                                            <span class="meta-item">📚 42 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 497</span>
+                                            <span class="original-price">R$ 697</span>
+                                        </div>
+                                        <a href="curso-trauma-avancado.html" class="btn btn-outline btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-resgate.jpg" alt="Técnicas de Resgate">
+                                        <div class="course-badge featured">Prático</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Técnicas de Resgate e Salvamento</h4>
+                                        <p>Procedimentos de resgate em diversas situações</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 40 horas</span>
+                                            <span class="meta-item">📚 35 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 387</span>
+                                            <span class="original-price">R$ 557</span>
+                                        </div>
+                                        <a href="curso-resgate.html" class="btn btn-primary btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="course-sidebar">
+                <div class="sidebar-card">
+                    <h3>Seu Progresso</h3>
+                    <div class="progress-card">
+                        <div class="progress-info">
+                            <span>Aulas Concluídas</span>
+                            <span class="progress-count">2/20</span>
+                        </div>
+                        <div class="progress-bar-small">
+                            <div class="progress-fill-small" style="width: 15%"></div>
+                        </div>
+                        <p class="progress-percentage">15% completo</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Estatísticas do Curso</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>Total de Aulas</span>
+                            <span class="stat-value">20</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Casos Práticos</span>
+                            <span class="stat-value">12</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Nível</span>
+                            <span class="stat-value">Avançado</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Certificação</span>
+                            <span class="stat-value">Internacional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Instrutor</h3>
+                    <div class="instructor-info">
+                        <img src="instrutor-aph.jpg" alt="Dr. Marcelo Torres" class="instructor-avatar">
+                        <div class="instructor-details">
+                            <h4>Dr. Marcelo Torres</h4>
+                            <p>Médico do SAMU</p>
+                            <div class="instructor-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.9 (2.1k avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block btn-lg">Continuar Aprendendo</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="course-detail.js"></script>
+</body>
+</html>

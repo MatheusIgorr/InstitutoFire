@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Instituto Fire</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo-section">
+                    <div class="logo">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L40 16V32L24 44L8 32V16L24 4Z" fill="url(#gradient)"/>
+                            <path d="M24 20L30 24V28L24 32L18 28V24L24 20Z" fill="white"/>
+                            <path d="M24 12L28 15V21L24 24L20 21V15L24 12Z" fill="#dc2626"/>
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#dc2626"/>
+                                    <stop offset="100%" stop-color="#b91c1c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-name">Instituto Fire</span>
+                </a>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="login-student.html" class="btn btn-ghost">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                            <path d="M12 12a5 5 0 100-10 5 5 0 000 10z"/>
+                            <path d="M12 14c-5 0-9 4-9 9h18c0-5-4-9-9-9z"/>
+                        </svg>
+                        Entrar
+                    </a>
+                    <a href="signup.html" class="btn btn-primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                        </svg>
+                        Cadastro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Premium Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Voltar para Home
+                </a>
+                <h1>Curso de Brigada de Incêndio</h1>
+                <p>Treinamento teórico e prático para atuar em emergências com certificação reconhecida</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Course Content -->
+    <main class="container course-container">
+        <div class="course-card-large">
+            <div class="course-image-large">
+                <img src="curso-brigadista.png" alt="Curso Brigada de Incêndio - Treinamento Prático" 
+                     data-src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                <div class="course-overlay">
+                    <div class="course-badge premium">Mais Procurado</div>
+                    <button class="btn-wishlist" aria-label="Adicionar aos favoritos">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="course-details">
+                <div class="course-header">
+                    <h2>Brigada de Incêndio - Curso Completo</h2>
+                    <div class="course-rating">
+                        <div class="stars">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                        <span class="rating-text">4.9 (2.350 avaliações)</span>
+                    </div>
+                </div>
+                
+                <p class="course-description">Prático e Presencial Básico para Brigadistas. Domine combate a incêndios em curso prático de brigada.</p>
+                
+                <p class="course-full-description">
+                    Curso completo e presencial que capacita profissionais para atuar na prevenção e combate a incêndios, 
+                    primeiros socorros e evacuação de ambientes. Desenvolvido por especialistas do Corpo de Bombeiros com 
+                    metodologia prática e certificação reconhecida nacionalmente.
+                </p>
+                
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <div class="meta-icon">📚</div>
+                        <div>
+                            <strong>27 Módulos Completos</strong>
+                            <span>Teoria e prática integradas</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon">⏱️</div>
+                        <div>
+                            <strong>40 Horas de Conteúdo</strong>
+                            <span>Carga horária certificada</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon">👥</div>
+                        <div>
+                            <strong>2.350 Alunos</strong>
+                            <span>Comunidade ativa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-learning">
+                    <h3>O que você vai dominar:</h3>
+                    <div class="learning-grid">
+                        <div class="learning-item">
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Princípios de combustão e extinção
+                        </div>
+                        <div class="learning-item">
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Classes de incêndio (A, B, C, D, K)
+                        </div>
+                        <div class="learning-item">
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Uso de extintores e equipamentos
+                        </div>
+                        <div class="learning-item">
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Primeiros socorros e RCP
+                        </div>
+                        <div class="learning-item">
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Planos de evacuação e abandono
+                        </div>
+                        <div class="learning-item">
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 01118 0z"/>
+                            </svg>
+                            Gestão de emergências
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-actions">
+                    <a href="course-detail.html" class="btn btn-primary btn-lg btn-block">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Iniciar Curso Agora
+                    </a>
+                    <div class="action-buttons">
+                        <button class="btn btn-outline">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Aula Demonstrativa
+                        </button>
+                        <button class="btn btn-ghost">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            Favoritar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Courses Section -->
+    <section class="related-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Outros Cursos Relacionados</h2>
+                <p class="section-subtitle">Amplie seus conhecimentos com nossa formação completa</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="primeiros-socorros.jpg" alt="Primeiros Socorros Avançado" 
+                             data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <div class="course-card-badge">Novo</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Primeiros Socorros Avançado</h3>
+                        <p>Técnicas avançadas de primeiros socorros para situações de emergência</p>
+                        <div class="course-card-meta">
+                            <span>16 aulas</span>
+                            <span>⭐ 4.8</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-block">Ver Curso</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="nr23.jpg" alt="NR-23 Completa" 
+                             data-src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                    </div>
+                    <div class="course-card-content">
+                        <h3>NR-23 Completa</h3>
+                        <p>Norma regulamentadora completa sobre proteção contra incêndios</p>
+                        <div class="course-card-meta">
+                            <span>12 aulas</span>
+                            <span>⭐ 4.7</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-block">Ver Curso</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="combate-industrial.jpg" alt="Combate a Incêndio Industrial" 
+                             data-src="https://images.unsplash.com/photo-1566910641215-663175ccb127?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <div class="course-card-badge">Popular</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Combate a Incêndio Industrial</h3>
+                        <p>Especialização em combate a incêndios em ambientes industriais</p>
+                        <div class="course-card-meta">
+                            <span>20 aulas</span>
+                            <span>⭐ 4.9</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-block">Ver Curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>🔥 Instituto Fire</span>
+                    </div>
+                    <p>Capacitando profissionais para salvar vidas através do treinamento mais completo em brigada de incêndio do Brasil.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+                                <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="course-detail.html">Brigada de Incêndio</a></li>
+                        <li><a href="#">Primeiros Socorros Avançado</a></li>
+                        <li><a href="#">NR-23 Completa</a></li>
+                        <li><a href="#">Combate a Incêndio Industrial</a></li>
+                        <li><a href="#">Gestão de Emergências</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossos Instrutores</a></li>
+                        <li><a href="#">Certificações</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Blog de Segurança</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">WhatsApp (11) 99999-9999</a></li>
+                        <li><a href="#">contato@institutofire.com</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Instituto Fire. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

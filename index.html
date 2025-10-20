@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Fire - Cursos Profissionais de Emergência</title>
+    <meta name="description" content="Cursos práticos de brigada de incêndio, primeiros socorros, socorrista, DEA, APH e formação de instrutores. Certificação reconhecida.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo-section">
+                    <div class="logo">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L40 16V32L24 44L8 32V16L24 4Z" fill="url(#gradient)"/>
+                            <path d="M24 20L30 24V28L24 32L18 28V24L24 20Z" fill="white"/>
+                            <path d="M24 12L28 15V21L24 24L20 21V15L24 12Z" fill="#dc2626"/>
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#dc2626"/>
+                                    <stop offset="100%" stop-color="#b91c1c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-name">Instituto Fire</span>
+                </a>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="login-student.html" class="btn btn-ghost">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                            <path d="M12 12a5 5 0 100-10 5 5 0 000 10z"/>
+                            <path d="M12 14c-5 0-9 4-9 9h18c0-5-4-9-9-9z"/>
+                        </svg>
+                        Entrar
+                    </a>
+                    <a href="signup.html" class="btn btn-primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                        </svg>
+                        Cadastro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Premium Hero Section -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-hero-text">
+                    <h1>Formação em Emergências e Resgate</h1>
+                    <p>Cursos práticos e certificados para profissionais que salvam vidas</p>
+                    <p class="course-hero-subtitle">Treinamentos especializados em brigada de incêndio, primeiros socorros, socorrista, DEA, APH avançado e formação de instrutores.</p>
+                    <div class="course-hero-stats">
+                        <span>
+                            <svg width="20" height="20" fill="#059669" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            150+ Aulas Práticas
+                        </span>
+                        <span>
+                            <svg width="20" height="20" fill="#f59e0b" viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+                            </svg>
+                            5.200+ Alunos
+                        </span>
+                        <span>
+                            <svg width="20" height="20" fill="#dc2626" viewBox="0 0 24 24">
+                                <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                            </svg>
+                            4.9 Avaliação
+                        </span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#cursos" class="btn btn-primary btn-lg">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Ver Todos os Cursos
+                        </a>
+                        <a href="#features" class="btn btn-outline btn-lg">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                <div class="course-hero-image">
+                    <img src="hero-cursos.png" alt="Cursos Profissionais de Emergência e Resgate" 
+                         data-src="https://images.unsplash.com/photo-1581093458791-8a74e7ac8f6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                    <div class="hero-image-badge">
+                        <span>🔥 Cursos em Destaque</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Depoimentos -->
+    <section class="testimonials-carousel">
+        <div class="container">
+            <div class="section-header">
+                <h2>Depoimentos de Alunos</h2>
+                <p class="section-subtitle">O que nossos alunos dizem sobre o Instituto Fire</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                                </div>
+                                <p>"O curso superou minhas expectativas! Consegui uma promoção no trabalho após me certificar. Os instrutores são incríveis!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">CR</div>
+                                <div class="author-info">
+                                    <strong>Carlos Rodrigues</strong>
+                                    <span>Supervisor de Segurança</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                                </div>
+                                <p>"Material didático excelente e as práticas são muito realistas. Me sinto preparado para atuar em qualquer emergência."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AS</div>
+                                <div class="author-info">
+                                    <strong>Amanda Silva</strong>
+                                    <span>Brigadista Certificada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                                </div>
+                                <p>"A plataforma é intuitiva e o suporte responde rápido. Consegui conciliar o curso com meu trabalho sem problemas."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">RM</div>
+                                <div class="author-info">
+                                    <strong>Ricardo Mendes</strong>
+                                    <span>Coordenador de Facilities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button class="carousel-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots">
+                        <button class="dot active" aria-label="Ir para slide 1"></button>
+                        <button class="dot" aria-label="Ir para slide 2"></button>
+                        <button class="dot" aria-label="Ir para slide 3"></button>
+                    </div>
+                    <button class="carousel-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Por que escolher o Instituto Fire?</h2>
+            <p class="section-subtitle">A plataforma mais completa para formação de profissionais de emergência</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Aulas com Especialistas</h3>
+                    <p>Aprenda com instrutores credenciados e com vasta experiência em emergências e combate a incêndios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Treinamento Prático</h3>
+                    <p>Simulações realistas e exercícios práticos que preparam você para situações reais de emergência.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Certificação Reconhecida</h3>
+                    <p>Certificado válido em todo território nacional, atendendo às normas do Corpo de Bombeiros.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Comunidade Ativa</h3>
+                    <p>Conecte-se com outros profissionais, compartilhe experiências e amplie sua rede profissional.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Atualização Constante</h3>
+                    <p>Conteúdo sempre atualizado conforme as novas normas e procedimentos de segurança.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Oportunidades Profissionais</h3>
+                    <p>Destaque-se no mercado com uma certificação valorizada por empresas de todos os segmentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Todos os Cursos -->
+    <section id="cursos" class="all-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Cursos</h2>
+                <p class="section-subtitle">Formação completa em emergências e primeiros socorros</p>
+            </div>
+            
+            <div class="courses-grid-large">
+                <!-- Curso Brigada de Incêndio -->
+                <div class="course-card-featured">
+                    <div class="course-card-image">
+                        <img src="curso-brigadista.png" alt="Curso Brigada de Incêndio" 
+                             data-src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <div class="course-card-badge featured">Mais Procurado</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Brigada de Incêndio</h3>
+                        <p>Curso completo para formação de brigadistas com certificação reconhecida nacionalmente.</p>
+                        <div class="course-card-meta">
+                            <span>27 aulas</span>
+                            <span>⭐ 4.9</span>
+                            <span>40h</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <a href="course-detail.html" class="btn btn-primary btn-block">Ver Curso</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso Socorrista -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-socorrista.png" alt="Curso Socorrista" 
+                             data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <div class="course-card-badge">Novo</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Socorrista</h3>
+                        <p>Formação completa para atuação em primeiros socorros e atendimento pré-hospitalar.</p>
+                        <div class="course-card-meta">
+                            <span>18 aulas</span>
+                            <span>⭐ 4.8</span>
+                            <span>35h</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <a href="course-socorrista.html" class="btn btn-outline btn-block">Ver Curso</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso DEA -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-dea.png" alt="Curso DEA - Desfibrilador Externo Automático" 
+                             data-src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                    </div>
+                    <div class="course-card-content">
+                        <h3>DEA - Desfibrilador Externo Automático</h3>
+                        <p>Treinamento especializado no uso de DEA para emergências cardíacas.</p>
+                        <div class="course-card-meta">
+                            <span>12 aulas</span>
+                            <span>⭐ 4.9</span>
+                            <span>20h</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <a href="course-DEA.html" class="btn btn-outline btn-block">Ver Curso</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso APH Avançado -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-aph.png" alt="Curso APH Avançado" 
+                             data-src="https://images.unsplash.com/photo-1584467735871-8db9ac8e5e3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <div class="course-card-badge">Avançado</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>APH Avançado</h3>
+                        <p>Atendimento Pré-Hospitalar avançado para profissionais de emergência.</p>
+                        <div class="course-card-meta">
+                            <span>24 aulas</span>
+                            <span>⭐ 4.9</span>
+                            <span>45h</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <a href="course-APH.html" class="btn btn-outline btn-block">Ver Curso</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso Instrutor -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-instrutor.png" alt="Curso Formação de Instrutor" 
+                             data-src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <div class="course-card-badge">Certificação</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Formação de Instrutor</h3>
+                        <p>Capacitação para se tornar instrutor em cursos de emergência e primeiros socorros.</p>
+                        <div class="course-card-meta">
+                            <span>20 aulas</span>
+                            <span>⭐ 4.8</span>
+                            <span>60h</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <a href="course-instrutor.html" class="btn btn-outline btn-block">Ver Curso</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso Patrimonia -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-patrimonia.png" alt="Curso Patrimonia" 
+                             data-src="https://images.unsplash.com/photo-1566910641215-663175ccb127?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Patrimonia</h3>
+                        <p>Proteção e segurança patrimonial com foco em prevenção de emergências.</p>
+                        <div class="course-card-meta">
+                            <span>16 aulas</span>
+                            <span>⭐ 4.7</span>
+                            <span>30h</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <a href="course-patrimonia.html" class="btn btn-outline btn-block">Ver Curso</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparação de Cursos -->
+    <section class="courses-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>Escolha o Curso Ideal para Você</h2>
+                <p class="section-subtitle">Compare nossos cursos e encontre a formação perfeita</p>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-cell"></div>
+                    <div class="comparison-cell">
+                        <h4>Brigada de Incêndio</h4>
+                        <span class="price">R$ 497</span>
+                    </div>
+                    <div class="comparison-cell">
+                        <h4>Socorrista</h4>
+                        <span class="price">R$ 397</span>
+                    </div>
+                    <div class="comparison-cell">
+                        <h4>APH Avançado</h4>
+                        <span class="price">R$ 597</span>
+                    </div>
+                    <div class="comparison-cell">
+                        <h4>Instrutor</h4>
+                        <span class="price">R$ 897</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">Carga Horária</div>
+                    <div class="comparison-cell">40 horas</div>
+                    <div class="comparison-cell">35 horas</div>
+                    <div class="comparison-cell">45 horas</div>
+                    <div class="comparison-cell">60 horas</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">Certificação</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">Aulas Práticas</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">Suporte Online</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">Material Didático</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                    <div class="comparison-cell">✅</div>
+                </div>
+                
+                <div class="comparison-actions">
+                    <div class="comparison-cell"></div>
+                    <div class="comparison-cell">
+                        <a href="course-detail.html" class="btn btn-primary btn-block">Escolher</a>
+                    </div>
+                    <div class="comparison-cell">
+                        <a href="#" class="btn btn-outline btn-block">Escolher</a>
+                    </div>
+                    <div class="comparison-cell">
+                        <a href="#" class="btn btn-outline btn-block">Escolher</a>
+                    </div>
+                    <div class="comparison-cell">
+                        <a href="#" class="btn btn-outline btn-block">Escolher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium CTA Section -->
+    <section class="cta-premium">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para salvar vidas?</h2>
+                <p>Junte-se a mais de 5.200 profissionais que já transformaram suas carreiras com nossas certificações</p>
+                <div class="cta-stats">
+                    <div class="stat">
+                        <strong>98%</strong>
+                        <span>Taxa de aprovação</span>
+                    </div>
+                    <div class="stat">
+                        <strong>150+</strong>
+                        <span>Aulas práticas</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Certificação garantida</span>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="signup.html" class="btn btn-light btn-lg">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Começar Agora
+                    </a>
+                    <a href="login-student.html" class="btn btn-outline btn-lg">
+                        Já tenho conta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>🔥 Instituto Fire</span>
+                    </div>
+                    <p>Capacitando profissionais para salvar vidas através do treinamento mais completo em emergências do Brasil.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+                                <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="course-detail.html">Brigada de Incêndio</a></li>
+                        <li><a href="#">Socorrista</a></li>
+                        <li><a href="#">DEA</a></li>
+                        <li><a href="#">APH Avançado</a></li>
+                        <li><a href="#">Formação de Instrutor</a></li>
+                        <li><a href="#">Patrimonia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossos Instrutores</a></li>
+                        <li><a href="#">Certificações</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Blog de Segurança</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">WhatsApp (11) 99999-9999</a></li>
+                        <li><a href="#">contato@institutofire.com</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Instituto Fire. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

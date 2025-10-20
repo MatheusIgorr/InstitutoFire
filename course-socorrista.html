@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Socorrista - DEA, Patrulhamento e APH | Brigaditas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="logo-brigada.png" alt="Brigada de Emergência" class="logo">
+                    <span class="brand-name">Brigaditas</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <!-- SVG icons -->
+                    </button>
+                    <a href="login.html" class="btn btn-ghost">Entrar</a>
+                    <a href="signup.html" class="btn btn-primary">Cadastro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <a href="courses.html" class="back-link">← Voltar aos Cursos</a>
+            <h1>Curso de Socorrista - DEA, Patrulhamento e APH</h1>
+            <p>Formação completa em atendimento pré-hospitalar e emergências médicas</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 12%"></div>
+            </div>
+            <span class="progress-text" id="progressText">12% completo</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container course-main">
+        <div class="course-grid">
+            <!-- Video Player and Tabs -->
+            <div class="course-content">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <span>▶</span>
+                        <p id="lessonTitle">Introdução ao Atendimento Pré-Hospitalar</p>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="lessons">Aulas</button>
+                        <button class="tab-btn" data-tab="exercises">Exercícios</button>
+                        <button class="tab-btn" data-tab="info">Sobre o Curso</button>
+                        <button class="tab-btn" data-tab="related">Outros Cursos</button>
+                    </div>
+
+                    <!-- Lessons Tab -->
+                    <div class="tab-content active" id="lessons-tab">
+                        <div class="lessons-list" id="lessonsList">
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">1</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Introdução ao APH</div>
+                                    <div class="lesson-duration">25 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">2</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Avaliação Primária da Vítima</div>
+                                    <div class="lesson-duration">35 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">3</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">RCP Básica e Avançada</div>
+                                    <div class="lesson-duration">45 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">4</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Uso do DEA - Teoria e Prática</div>
+                                    <div class="lesson-duration">50 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info Tab -->
+                    <div class="tab-content" id="info-tab">
+                        <div class="course-info-card">
+                            <h3>Sobre este Curso</h3>
+                            <p>Curso completo de Socorrista com especialização em DEA (Desfibrilador Externo Automático), Patrulhamento e APH (Atendimento Pré-Hospitalar). Formação prática e teórica para atuar em situações de emergência médica.</p>
+                            
+                            <h4>O que você aprenderá:</h4>
+                            <ul>
+                                <li>Protocolos de Atendimento Pré-Hospitalar (APH)</li>
+                                <li>Uso do DEA em emergências cardíacas</li>
+                                <li>Técnicas de patrulhamento e segurança</li>
+                                <li>RCP avançada e suporte básico de vida</li>
+                                <li>Imobilização e transporte de vítimas</li>
+                                <li>Gestão de cenas de emergência</li>
+                            </ul>
+
+                            <h4>Certificações Incluídas:</h4>
+                            <ul>
+                                <li>Certificado de Socorrista Profissional</li>
+                                <li>Certificação em DEA</li>
+                                <li>Certificado de APH</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related Courses Tab -->
+                    <div class="tab-content" id="related-tab">
+                        <div class="related-courses">
+                            <h3>Cursos Relacionados</h3>
+                            <p class="section-subtitle">Amplie seus conhecimentos em emergências médicas</p>
+                            
+                            <div class="related-courses-grid">
+                                <!-- Curso 1 -->
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-primeiros-socorros.jpg" alt="Primeiros Socorros Avançados">
+                                        <div class="course-badge">Popular</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Primeiros Socorros Avançados</h4>
+                                        <p>Treinamento completo em primeiros socorros para situações de emergência</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 40 horas</span>
+                                            <span class="meta-item">📚 35 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 297</span>
+                                            <span class="original-price">R$ 497</span>
+                                        </div>
+                                        <a href="curso-primeiros-socorros.html" class="btn btn-outline btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+
+                                <!-- Curso 2 -->
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-trauma.jpg" alt="Atendimento a Trauma">
+                                        <div class="course-badge featured">Destaque</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Atendimento a Trauma - PHTLS</h4>
+                                        <p>Protocolos avançados para atendimento a vítimas de trauma</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 45 horas</span>
+                                            <span class="meta-item">📚 38 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 457</span>
+                                            <span class="original-price">R$ 657</span>
+                                        </div>
+                                        <a href="curso-trauma.html" class="btn btn-primary btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="course-sidebar">
+                <!-- Progress Card -->
+                <div class="sidebar-card">
+                    <h3>Seu Progresso</h3>
+                    <div class="progress-card">
+                        <div class="progress-info">
+                            <span>Aulas Concluídas</span>
+                            <span class="progress-count">3/24</span>
+                        </div>
+                        <div class="progress-bar-small">
+                            <div class="progress-fill-small" style="width: 12%"></div>
+                        </div>
+                        <p class="progress-percentage">12% completo</p>
+                    </div>
+                </div>
+
+                <!-- Course Stats -->
+                <div class="sidebar-card">
+                    <h3>Estatísticas do Curso</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>Total de Aulas</span>
+                            <span class="stat-value">24</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Exercícios</span>
+                            <span class="stat-value">8</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Nível</span>
+                            <span class="stat-value">Intermediário</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Certificação</span>
+                            <span class="stat-value">3 Certificados</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor -->
+                <div class="sidebar-card">
+                    <h3>Instrutor</h3>
+                    <div class="instructor-info">
+                        <img src="instrutor-socorrista.jpg" alt="Dra. Ana Costa" class="instructor-avatar">
+                        <div class="instructor-details">
+                            <h4>Dra. Ana Costa</h4>
+                            <p>Médica Emergencista</p>
+                            <div class="instructor-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.9 (1.8k avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button class="btn btn-primary btn-block btn-lg">Continuar Aprendendo</button>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>🔥 Brigaditas</span>
+                    </div>
+                    <p>Treinamento profissional em emergências médicas</p>
+                </div>
+                <!-- Footer sections -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brigaditas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="course-detail.js"></script>
+</body>
+</html>

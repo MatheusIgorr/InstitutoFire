@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso DEA - Desfibrilador Externo Automático | Brigaditas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="logo-brigada.png" alt="Brigada de Emergência" class="logo">
+                    <span class="brand-name">Brigaditas</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <!-- SVG icons -->
+                    </button>
+                    <a href="login.html" class="btn btn-ghost">Entrar</a>
+                    <a href="signup.html" class="btn btn-primary">Cadastro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <a href="courses.html" class="back-link">← Voltar aos Cursos</a>
+            <h1>Curso de DEA - Desfibrilador Externo Automático</h1>
+            <p>Treinamento especializado no uso de desfibriladores para emergências cardíacas</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 25%"></div>
+            </div>
+            <span class="progress-text" id="progressText">25% completo</span>
+        </div>
+    </header>
+
+    <main class="container course-main">
+        <div class="course-grid">
+            <div class="course-content">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <span>▶</span>
+                        <p id="lessonTitle">Funcionamento do DEA - Teoria</p>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="lessons">Aulas</button>
+                        <button class="tab-btn" data-tab="exercises">Exercícios</button>
+                        <button class="tab-btn" data-tab="info">Sobre o Curso</button>
+                        <button class="tab-btn" data-tab="related">Outros Cursos</button>
+                    </div>
+
+                    <div class="tab-content active" id="lessons-tab">
+                        <div class="lessons-list" id="lessonsList">
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">1</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Introdução ao DEA</div>
+                                    <div class="lesson-duration">20 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">2</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Arritmias Cardíacas</div>
+                                    <div class="lesson-duration">30 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">3</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Segurança no Uso do DEA</div>
+                                    <div class="lesson-duration">25 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">4</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Prática com DEA - Simulação</div>
+                                    <div class="lesson-duration">40 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="info-tab">
+                        <div class="course-info-card">
+                            <h3>Sobre o Curso de DEA</h3>
+                            <p>Curso especializado no uso do Desfibrilador Externo Automático para leigos e profissionais de saúde. Aprenda a salvar vidas em situações de parada cardiorrespiratória.</p>
+                            
+                            <h4>Conteúdo Programático:</h4>
+                            <ul>
+                                <li>Fundamentos da desfibrilação</li>
+                                <li>Identificação de arritmias cardíacas</li>
+                                <li>Protocolos de uso do DEA</li>
+                                <li>Integração DEA + RCP</li>
+                                <li>Manutenção e cuidados com o equipamento</li>
+                                <li>Legislação e normas ANVISA</li>
+                            </ul>
+
+                            <h4>Público-Alvo:</h4>
+                            <ul>
+                                <li>Brigadistas e socorristas</li>
+                                <li>Profissionais de segurança</li>
+                                <li>Leigos interessados em primeiros socorros</li>
+                                <li>Profissionais de educação física</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="related-tab">
+                        <div class="related-courses">
+                            <h3>Cursos Relacionados</h3>
+                            <p class="section-subtitle">Complemente sua formação em emergências</p>
+                            
+                            <div class="related-courses-grid">
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-rcp.jpg" alt="RCP Avançada">
+                                        <div class="course-badge">Essencial</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>RCP Avançada e SBV</h4>
+                                        <p>Suporte Básico de Vida com técnicas avançadas de reanimação</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 25 horas</span>
+                                            <span class="meta-item">📚 20 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 227</span>
+                                            <span class="original-price">R$ 357</span>
+                                        </div>
+                                        <a href="curso-rcp.html" class="btn btn-outline btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-cardio.jpg" alt="Emergências Cardiológicas">
+                                        <div class="course-badge featured">Novo</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Emergências Cardiológicas</h4>
+                                        <p>Identificação e atendimento de emergências cardíacas</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 30 horas</span>
+                                            <span class="meta-item">📚 25 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 297</span>
+                                            <span class="original-price">R$ 447</span>
+                                        </div>
+                                        <a href="curso-cardio.html" class="btn btn-primary btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="course-sidebar">
+                <div class="sidebar-card">
+                    <h3>Seu Progresso</h3>
+                    <div class="progress-card">
+                        <div class="progress-info">
+                            <span>Aulas Concluídas</span>
+                            <span class="progress-count">3/12</span>
+                        </div>
+                        <div class="progress-bar-small">
+                            <div class="progress-fill-small" style="width: 25%"></div>
+                        </div>
+                        <p class="progress-percentage">25% completo</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Estatísticas do Curso</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>Total de Aulas</span>
+                            <span class="stat-value">12</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Exercícios Práticos</span>
+                            <span class="stat-value">6</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Nível</span>
+                            <span class="stat-value">Básico a Intermediário</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Certificação</span>
+                            <span class="stat-value">Incluída</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Instrutor</h3>
+                    <div class="instructor-info">
+                        <img src="instrutor-dea.jpg" alt="Dr. Roberto Alves" class="instructor-avatar">
+                        <div class="instructor-details">
+                            <h4>Dr. Roberto Alves</h4>
+                            <p>Cardiologista Emergencista</p>
+                            <div class="instructor-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.8 (950 avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block btn-lg">Continuar Aprendendo</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="course-detail.js"></script>
+</body>
+</html>

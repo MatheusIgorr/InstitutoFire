@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Segurança Patrimonial | Brigaditas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="logo-brigada.png" alt="Brigada de Emergência" class="logo">
+                    <span class="brand-name">Brigaditas</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="login.html" class="btn btn-ghost">Entrar</a>
+                    <a href="signup.html" class="btn btn-primary">Cadastro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <a href="courses.html" class="back-link">← Voltar aos Cursos</a>
+            <h1>Curso de Segurança Patrimonial</h1>
+            <p>Proteção de ativos, prevenção de perdas e gestão de riscos empresariais</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 20%"></div>
+            </div>
+            <span class="progress-text" id="progressText">20% completo</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container course-main">
+        <div class="course-grid">
+            <!-- Video Player and Tabs -->
+            <div class="course-content">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <span>▶</span>
+                        <p id="lessonTitle">Introdução à Segurança Patrimonial</p>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="lessons">Aulas</button>
+                        <button class="tab-btn" data-tab="exercises">Exercícios</button>
+                        <button class="tab-btn" data-tab="info">Sobre o Curso</button>
+                        <button class="tab-btn" data-tab="related">Outros Cursos</button>
+                    </div>
+
+                    <!-- Lessons Tab -->
+                    <div class="tab-content active" id="lessons-tab">
+                        <div class="lessons-list" id="lessonsList">
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">1</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Conceitos de Segurança Patrimonial</div>
+                                    <div class="lesson-duration">30 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">2</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Gestão de Riscos Patrimoniais</div>
+                                    <div class="lesson-duration">35 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item completed">
+                                <div class="lesson-icon">3</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Sistemas de Monitoramento</div>
+                                    <div class="lesson-duration">40 min</div>
+                                </div>
+                                <div class="lesson-status">✅</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">4</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Controle de Acesso Avançado</div>
+                                    <div class="lesson-duration">45 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">5</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Procedimentos de Ronda</div>
+                                    <div class="lesson-duration">50 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                            <div class="lesson-item">
+                                <div class="lesson-icon">6</div>
+                                <div class="lesson-info">
+                                    <div class="lesson-title">Prevenção de Furtos e Roubos</div>
+                                    <div class="lesson-duration">55 min</div>
+                                </div>
+                                <div class="lesson-status">▶</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exercises Tab -->
+                    <div class="tab-content" id="exercises-tab">
+                        <div class="exercises-list" id="exercisesList">
+                            <div class="exercise-item">
+                                <div class="exercise-icon">📋</div>
+                                <div class="exercise-info">
+                                    <div class="exercise-title">Caso Prático - Análise de Riscos</div>
+                                    <div class="exercise-description">Identifique vulnerabilidades em um cenário empresarial</div>
+                                </div>
+                                <button class="btn btn-outline">Iniciar</button>
+                            </div>
+                            <div class="exercise-item">
+                                <div class="exercise-icon">🎯</div>
+                                <div class="exercise-info">
+                                    <div class="exercise-title">Simulação - Controle de Acesso</div>
+                                    <div class="exercise-description">Pratique procedimentos de verificação de identidade</div>
+                                </div>
+                                <button class="btn btn-outline">Iniciar</button>
+                            </div>
+                            <div class="exercise-item">
+                                <div class="exercise-icon">🛡️</div>
+                                <div class="exercise-info">
+                                    <div class="exercise-title">Plano de Segurança Patrimonial</div>
+                                    <div class="exercise-description">Elabore um plano completo de segurança</div>
+                                </div>
+                                <button class="btn btn-outline">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info Tab -->
+                    <div class="tab-content" id="info-tab">
+                        <div class="course-info-card">
+                            <h3>Sobre o Curso de Segurança Patrimonial</h3>
+                            <p>Curso completo voltado para a proteção de ativos empresariais, prevenção de perdas e implementação de sistemas de segurança eficientes. Formação ideal para profissionais de segurança patrimonial, vigilantes e gestores.</p>
+                            
+                            <h4>O que você aprenderá:</h4>
+                            <ul>
+                                <li>Gestão de riscos patrimoniais</li>
+                                <li>Sistemas de monitoramento e CCTV</li>
+                                <li>Controle de acesso físico e eletrônico</li>
+                                <li>Procedimentos de ronda e vigilância</li>
+                                <li>Prevenção de furtos, roubos e vandalismo</li>
+                                <li>Plano de segurança patrimonial</li>
+                                <li>Legislação de segurança privada</li>
+                                <li>Gestão de crises e emergências</li>
+                            </ul>
+
+                            <h4>Competências Desenvolvidas:</h4>
+                            <ul>
+                                <li>Capacidade de análise de vulnerabilidades</li>
+                                <li>Implementação de sistemas de segurança</li>
+                                <li>Gestão de equipes de segurança</li>
+                                <li>Elaboração de relatórios e documentação</li>
+                                <li>Tomada de decisão em situações críticas</li>
+                            </ul>
+
+                            <h4>Público-Alvo:</h4>
+                            <ul>
+                                <li>Vigilantes patrimoniais</li>
+                                <li>Supervisores de segurança</li>
+                                <li>Gestores de facilities</li>
+                                <li>Profissionais de segurança corporativa</li>
+                                <li>Interessados em atuar na área de segurança</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related Courses Tab -->
+                    <div class="tab-content" id="related-tab">
+                        <div class="related-courses">
+                            <h3>Cursos Relacionados</h3>
+                            <p class="section-subtitle">Amplie seus conhecimentos em segurança corporativa</p>
+                            
+                            <div class="related-courses-grid">
+                                <!-- Curso 1 -->
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-controle-acesso.jpg" alt="Controle de Acesso">
+                                        <div class="course-badge">Essencial</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Controle de Acesso e Identificação</h4>
+                                        <p>Sistemas avançados de controle de acesso e verificação</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 25 horas</span>
+                                            <span class="meta-item">📚 20 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 287</span>
+                                            <span class="original-price">R$ 427</span>
+                                        </div>
+                                        <a href="curso-controle-acesso.html" class="btn btn-outline btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+
+                                <!-- Curso 2 -->
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-cftv.jpg" alt="CFTV e Monitoramento">
+                                        <div class="course-badge featured">Tecnológico</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>CFTV e Sistemas de Monitoramento</h4>
+                                        <p>Operação e gestão de sistemas de videomonitoramento</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 30 horas</span>
+                                            <span class="meta-item">📚 24 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 347</span>
+                                            <span class="original-price">R$ 497</span>
+                                        </div>
+                                        <a href="curso-cftv.html" class="btn btn-primary btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+
+                                <!-- Curso 3 -->
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-gestao-seguranca.jpg" alt="Gestão de Segurança">
+                                        <div class="course-badge premium">Avançado</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Gestão de Segurança Corporativa</h4>
+                                        <p>Liderança e administração de departamentos de segurança</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 40 horas</span>
+                                            <span class="meta-item">📚 32 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 497</span>
+                                            <span class="original-price">R$ 697</span>
+                                        </div>
+                                        <a href="curso-gestao-seguranca.html" class="btn btn-outline btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+
+                                <!-- Curso 4 -->
+                                <div class="related-course-card">
+                                    <div class="related-course-image">
+                                        <img src="curso-investigacao.jpg" alt="Investigação Patrimonial">
+                                        <div class="course-badge">Especializado</div>
+                                    </div>
+                                    <div class="related-course-content">
+                                        <h4>Investigação Patrimonial</h4>
+                                        <p>Técnicas de investigação para prevenção de perdas</p>
+                                        <div class="related-course-meta">
+                                            <span class="meta-item">🕒 35 horas</span>
+                                            <span class="meta-item">📚 28 aulas</span>
+                                        </div>
+                                        <div class="related-course-price">
+                                            <span class="price">R$ 427</span>
+                                            <span class="original-price">R$ 597</span>
+                                        </div>
+                                        <a href="curso-investigacao.html" class="btn btn-outline btn-block">Ver Curso</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="course-sidebar">
+                <!-- Progress Card -->
+                <div class="sidebar-card">
+                    <h3>Seu Progresso</h3>
+                    <div class="progress-card">
+                        <div class="progress-info">
+                            <span>Aulas Concluídas</span>
+                            <span class="progress-count">3/28</span>
+                        </div>
+                        <div class="progress-bar-small">
+                            <div class="progress-fill-small" style="width: 20%"></div>
+                        </div>
+                        <p class="progress-percentage">20% completo</p>
+                    </div>
+                </div>
+
+                <!-- Course Stats -->
+                <div class="sidebar-card">
+                    <h3>Estatísticas do Curso</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>Total de Aulas</span>
+                            <span class="stat-value">28</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Exercícios Práticos</span>
+                            <span class="stat-value">12</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Nível</span>
+                            <span class="stat-value">Intermediário</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Certificação</span>
+                            <span class="stat-value">Reconhecida</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Carga Horária</span>
+                            <span class="stat-value">45 horas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor -->
+                <div class="sidebar-card">
+                    <h3>Instrutor</h3>
+                    <div class="instructor-info">
+                        <img src="instrutor-patrimonial.jpg" alt="Comandante Rocha" class="instructor-avatar">
+                        <div class="instructor-details">
+                            <h4>Comandante Rocha</h4>
+                            <p>Especialista em Segurança Patrimonial</p>
+                            <div class="instructor-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.8 (1.5k avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-bio">
+                        <p>20 anos de experiência em segurança corporativa. Ex-diretor de segurança de grandes empresas.</p>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="sidebar-card">
+                    <h3>Ações Rápidas</h3>
+                    <div class="quick-actions">
+                        <button class="btn btn-outline btn-block">
+                            📥 Baixar Materiais
+                        </button>
+                        <button class="btn btn-outline btn-block">
+                            📋 Modelos de Documentos
+                        </button>
+                        <button class="btn btn-outline btn-block">
+                            💬 Fórum de Discussão
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course Features -->
+                <div class="sidebar-card">
+                    <h3>Recursos do Curso</h3>
+                    <div class="course-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📹</span>
+                            <span>Videoaulas em HD</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📚</span>
+                            <span>Material Complementar</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎓</span>
+                            <span>Certificado Reconhecido</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💼</span>
+                            <span>Cases Reais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button class="btn btn-primary btn-block btn-lg">Continuar Aprendendo</button>
+            </aside>
+        </div>
+    </main>
+
+    <!-- All Courses Section -->
+    <section class="all-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mais Cursos de Segurança</h2>
+                <p class="section-subtitle">Amplie sua expertise com nossa trilha completa de segurança</p>
+            </div>
+
+            <div class="courses-grid-large">
+                <!-- Curso Destaque -->
+                <div class="course-card-featured">
+                    <div class="course-card-image">
+                        <img src="curso-seguranca-corporativa.jpg" alt="Segurança Corporativa Avançada">
+                        <div class="course-overlay">
+                            <div class="course-badge featured">Destaque</div>
+                            <button class="btn-wishlist">❤️</button>
+                        </div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Segurança Corporativa Avançada</h3>
+                        <p>Curso completo para gestores de segurança com foco em estratégias corporativas, gestão de crises e compliance.</p>
+                        <div class="course-card-meta">
+                            <span>🕒 60 horas</span>
+                            <span>📚 48 aulas</span>
+                            <span>🎓 Certificado</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="rating-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <span class="rating-text">4.9 (890 avaliações)</span>
+                        </div>
+                        <div class="course-price-container">
+                            <span class="course-price">R$ 597</span>
+                            <span class="course-original-price">R$ 897</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <div class="action-buttons">
+                                <button class="btn btn-primary">Matricular-se</button>
+                                <button class="btn btn-outline">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 1 -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-portaria.jpg" alt="Portaria e Recepção">
+                        <div class="course-card-badge">Obrigatório</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Portaria e Recepção Segura</h3>
+                        <p>Técnicas para atendimento em portaria com foco em segurança e qualidade no serviço.</p>
+                        <div class="course-card-meta">
+                            <span>🕒 20 horas</span>
+                            <span>📚 16 aulas</span>
+                            <span>🎓 Certificado</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="course-price-container">
+                            <span class="course-price">R$ 187</span>
+                            <span class="course-original-price">R$ 287</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <button class="btn btn-primary btn-block">Começar Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-alarmes.jpg" alt="Sistemas de Alarme">
+                        <div class="course-card-badge premium">Técnico</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Sistemas de Alarme e Detecção</h3>
+                        <p>Instalação, manutenção e operação de sistemas eletrônicos de segurança.</p>
+                        <div class="course-card-meta">
+                            <span>🕒 35 horas</span>
+                            <span>📚 28 aulas</span>
+                            <span>🎓 Certificado</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="course-price-container">
+                            <span class="course-price">R$ 347</span>
+                            <span class="course-original-price">R$ 497</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <button class="btn btn-primary btn-block">Começar Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="course-card">
+                    <div class="course-card-image">
+                        <img src="curso-psicologia-seguranca.jpg" alt="Psicologia Aplicada">
+                        <div class="course-card-badge">Comportamental</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3>Psicologia Aplicada à Segurança</h3>
+                        <p>Compreensão do comportamento humano em situações de segurança.</p>
+                        <div class="course-card-meta">
+                            <span>🕒 25 horas</span>
+                            <span>📚 20 aulas</span>
+                            <span>🎓 Certificado</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="course-price-container">
+                            <span class="course-price">R$ 267</span>
+                            <span class="course-original-price">R$ 387</span>
+                        </div>
+                        <div class="course-card-actions">
+                            <button class="btn btn-primary btn-block">Começar Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>🔥 Brigaditas</span>
+                    </div>
+                    <p>Treinamento profissional em segurança patrimonial e corporativa</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Cursos de Segurança</h4>
+                    <ul>
+                        <li><a href="#">Segurança Patrimonial</a></li>
+                        <li><a href="#">Controle de Acesso</a></li>
+                        <li><a href="#">CFTV e Monitoramento</a></li>
+                        <li><a href="#">Portaria e Recepção</a></li>
+                        <li><a href="#">Gestão de Segurança</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossos Instrutores</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Certificados</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Brigaditas. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Serviço</a>
+                        <a href="#">Mapa do Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="course-detail.js"></script>
+</body>
+</html>

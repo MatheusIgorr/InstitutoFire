@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Brigada de Incêndio - Brigaditas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="logo-brigada.png" alt="Brigada de Emergência" class="logo">
+                    <span class="brand-name">Brigaditas</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="login.html" class="btn btn-ghost">Entrar</a>
+                    <a href="signup.html" class="btn btn-primary">Cadastro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <a href="courses.html" class="back-link">← Voltar aos Cursos</a>
+            <h1>Curso Brigada de Incêndio</h1>
+            <p>Treinamento teórico e prático do básico ao avançado</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 7%"></div>
+            </div>
+            <span class="progress-text" id="progressText">7% completo</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container course-main">
+        <div class="course-grid">
+            <!-- Video Player and Tabs -->
+            <div class="course-content">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <span>▶</span>
+                        <p id="lessonTitle">Introdução à Brigada de Incêndio</p>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="lessons">Aulas</button>
+                        <button class="tab-btn" data-tab="exercises">Exercícios</button>
+                        <button class="tab-btn" data-tab="info">Sobre o Curso</button>
+                    </div>
+
+                    <!-- Lessons Tab -->
+                    <div class="tab-content active" id="lessons-tab">
+                        <div class="lessons-list" id="lessonsList"></div>
+                    </div>
+
+                    <!-- Exercises Tab -->
+                    <div class="tab-content" id="exercises-tab">
+                        <div class="exercises-list" id="exercisesList"></div>
+                    </div>
+
+                    <!-- Info Tab -->
+                    <div class="tab-content" id="info-tab">
+                        <div class="course-info-card">
+                            <h3>Sobre este Curso</h3>
+                            <p>Este é um curso completo de Brigada de Incêndio que cobre todos os aspectos necessários para atuar com segurança em situações de emergência, desde o nível básico até o avançado.</p>
+                            
+                            <h4>O que você aprenderá:</h4>
+                            <ul>
+                                <li>Princípios de incêndio e combustão</li>
+                                <li>Tipos de incêndio (A, B, C, D, K)</li>
+                                <li>Técnicas de combate a incêndio</li>
+                                <li>Primeiros socorros e RCP</li>
+                                <li>Planos de evacuação e rotas de fuga</li>
+                                <li>Gestão de emergências e liderança</li>
+                                <li>Legislação e normas de segurança</li>
+                            </ul>
+
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Maioridade legal</li>
+                                <li>Aptidão física</li>
+                                <li>Comprometimento com a segurança</li>
+                                <li>Disponibilidade para treinamento prático</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="course-sidebar">
+                <!-- Progress Card -->
+                <div class="sidebar-card">
+                    <h3>Seu Progresso</h3>
+                    <div class="progress-card">
+                        <div class="progress-info">
+                            <span>Aulas Concluídas</span>
+                            <span class="progress-count" id="progressCount">2/27</span>
+                        </div>
+                        <div class="progress-bar-small">
+                            <div class="progress-fill-small" id="progressFillSmall" style="width: 7%"></div>
+                        </div>
+                        <p class="progress-percentage" id="progressPercentage">7% completo</p>
+                    </div>
+                </div>
+
+                <!-- Course Stats -->
+                <div class="sidebar-card">
+                    <h3>Estatísticas do Curso</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>Total de Aulas</span>
+                            <span class="stat-value">27</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Exercícios</span>
+                            <span class="stat-value">9</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Nível</span>
+                            <span class="stat-value">Básico ao Avançado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button class="btn btn-primary btn-block btn-lg">Continuar Aprendendo</button>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>🔥 Brigaditas</span>
+                    </div>
+                    <p>Treinamento profissional de brigadistas</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#">Todos os Cursos</a></li>
+                        <li><a href="#">Iniciante</a></li>
+                        <li><a href="#">Avançado</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brigaditas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="course-detail.js"></script>
+</body>
+</html>
